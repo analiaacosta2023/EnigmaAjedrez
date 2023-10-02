@@ -1,0 +1,46 @@
+body {
+    background-color: #CEBDA5;
+}
+
+#tablero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fila {
+    display: flex;
+}
+
+.rojo {
+    background-color: red;
+    border: 5px outset #a41c1c;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 10px 10px 0 0;
+}
+
+.azul {
+    background-color: blue;
+    border: 5px outset #2a1ca4;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 10px 10px 0 0;
+}
+
+.next-ns {
+    display: none;
+}
+
+.end-img {
+    display: flex;
+justify-content: center;
+}
+
+.end-img img {
+    width: 300px;
+}

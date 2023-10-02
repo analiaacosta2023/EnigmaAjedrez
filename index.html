@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/brands.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Tablero</title>
+</head>
+
+<body style="background-color: #CEBDA5;">
+    <div class="container mt-5">
+        <h1>Enigma del tablero de ajedrez y el artista</h1>
+        <p>Un artista decide pintar un tablero de ajedrez. Planea cubrir cada espacio por completo en tonos rojos o
+            azules.
+            Para darle un toque personal, quiere contar con igual cantidad de espacios rojos y azules, evitando a su vez
+            que
+            dos filas o columnas presenten el mismo número de espacios rojos.<br>¿Podría pintar el tablero siguiendo
+            estos
+            criterios?<br>¿Qué pasaría si, en lugar de un tablero de ajedrez tradicional de 8x8, tuviera uno enorme de
+            1000x1000?</p>
+        <h2>Acompañemos al artista en su razonamiento</h2>
+        <form id="form-espacios" action="submit">
+            <p>Cuántas casillas tendría por lado tu tablero?</p>
+            <input type="number" id="espacios">
+            <button type="submit" id="btn-espacios" class="btn btn-outline-dark">Jugar!</button>
+        </form>
+        <div class="d-flex">
+            <div id="paso1">
+            </div>
+            <div class="ms-5" style="display: flex; justify-content: center; align-items: center;">
+                <button id="next-btn" class="next-ns">Siguiente</button>
+            </div>
+        </div>
+
+        <div id="tablero">
+        </div>
+        <div id="paso2">
+        </div>
+    </div>
+    <footer>
+        <div class="text-center p-3 text-dark fixed-bottom">
+            © 2023 Copyright:
+            <i class="fa-brands fa-github"></i>
+            <a class="text-dark" href="https://github.com/analiaacosta2023">Analía Acosta</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="ajedrez.js"></script>
+
+</body>
+
+</html>
