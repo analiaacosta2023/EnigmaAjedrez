@@ -16,11 +16,11 @@ function mostrarTablero() {
         row.classList.add('fila');
         let string = ''
         for (let i = 1; i <= fila.rojo; i++) {
-            string += `<p class="rojo m-3">R</p>`
+            string += `<small class="rojo m-1">R</small>`
         }
 
         for (let i = 1; i <= fila.azul; i++) {
-            string += `<p class="azul m-3">A</p>`
+            string += `<small class="azul m-1">A</small>`
         }
 
         row.innerHTML = string

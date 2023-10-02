@@ -19,7 +19,6 @@ body {
     height: 40px;
     text-align: center;
     color: #fff;
-    margin: 10px 10px 0 0;
 }
 
 .azul {
@@ -29,7 +28,15 @@ body {
     height: 40px;
     text-align: center;
     color: #fff;
-    margin: 10px 10px 0 0;
+}
+
+@media (max-width:799px) {
+
+    .azul,
+    .rojo {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .next-ns {
@@ -38,7 +45,7 @@ body {
 
 .end-img {
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 .end-img img {
